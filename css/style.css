@@ -2,6 +2,7 @@
 :root {
   --main-color: #212121;
   --second-color: #757575;
+  --accent-color: #2196f3;
 }
 body {
   font-family: "Roboto", "Raleway", "Tahoma", san-serif;
@@ -19,7 +20,7 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .color-header {
   color: #000000;
@@ -29,18 +30,20 @@ body {
 }
 .button {
   cursor: pointer;
+  font-family: inherit;
 }
 /*Header styles*/
 
-.header-list {
+.header-list-item {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-.header-list-color:hover {
-  color: #2196f3;
+.header-list-item:hover,
+.header-list-item:focus {
+  color: var(--accent-color);
 }
 
 .header-mail {
@@ -50,8 +53,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
-.header-mail:hover {
-  color: #2196f3;
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
 }
 .header-tel {
   font-weight: 500;
@@ -60,6 +64,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
 /*Start styles*/
 .start {
   background-color: #2f303a;
@@ -82,7 +91,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
+  background: var(--accent-color);
 }
 
 /*Feature styles*/
@@ -167,4 +176,40 @@ footer {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.address {
+  font-style: normal;
+}
+.footer-color:hover,
+.footer-color:focus {
+  color: var(--accent-color);
+}
+
+/*PORTFOLIO*/
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.portfolio-after-title {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  color: var(--main-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background: var(--accent-color);
 }
