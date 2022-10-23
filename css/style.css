@@ -1,11 +1,14 @@
 /*General styles*/
 :root {
-  --main-color: #212121;
   --second-color: #757575;
   --accent-color: #2196f3;
+  --third-color: #ffffff;
 }
 body {
   font-family: "Roboto", "Raleway", "Tahoma", san-serif;
+  background-color: #ffffff;
+  color: #212121;
+  font-size: 14px;
 }
 .link {
   text-decoration: none;
@@ -14,11 +17,10 @@ body {
   list-style: none;
 }
 .logo {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 14);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -26,7 +28,7 @@ body {
   color: #000000;
 }
 .color-footer {
-  color: #ffffff;
+  color: var(--third-color);
 }
 .button {
   cursor: pointer;
@@ -48,10 +50,8 @@ body {
 
 .header-list-item {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--main-color);
 }
 .header-list-item:hover,
 .header-list-item:focus {
@@ -60,8 +60,7 @@ body {
 
 .header-mail {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
@@ -71,13 +70,15 @@ body {
 }
 .header-tel {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
 .header-tel:hover,
 .header-tel:focus {
+  color: var(--accent-color);
+}
+.accent:visited {
   color: var(--accent-color);
 }
 
@@ -92,7 +93,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--third-color);
 }
 .start-button {
   font-weight: 700;
@@ -102,42 +103,37 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--third-color);
   background: var(--accent-color);
+  border-radius: 4px;
 }
 
 /*Feature styles*/
 .feature-titles {
-  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-color);
 }
 .fearture-after-title {
-  font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
 
 /*About styles*/
 .about-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
 }
+
 .team-main-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
 }
 .team-title {
   font-weight: 500;
@@ -145,11 +141,10 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
 }
 .after-title {
   font-size: 16px;
-  line-height: 19px;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
@@ -160,20 +155,17 @@ footer {
   background-color: #2f303a;
 }
 .footer-adress {
-  font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--third-color);
 }
 .footer-mail {
-  font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
-  font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -187,16 +179,14 @@ footer {
 
 /*PORTFOLIO*/
 .portfolio-title {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: calc(18 / 14);
   letter-spacing: 0.06em;
-  color: var(--main-color);
 }
 
 .portfolio-after-title {
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 14);
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
@@ -204,12 +194,11 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
-  color: var(--main-color);
   background: #f5f4fa;
   border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
+  color: var(--third-color);
   background: var(--accent-color);
 }
