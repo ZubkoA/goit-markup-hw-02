@@ -52,7 +52,9 @@ body {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  font-family: inherit;
 }
+
 .header-list-item:hover,
 .header-list-item:focus {
   color: var(--accent-color);
