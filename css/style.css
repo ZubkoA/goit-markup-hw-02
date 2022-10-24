@@ -53,6 +53,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   font-family: inherit;
+  color: inherit;
 }
 
 .header-list-item:hover,
@@ -180,10 +181,20 @@ footer {
 }
 
 /*PORTFOLIO*/
+.portfolio-link {
+  color: inherit;
+  font-family: inherit;
+}
+
 .portfolio-title {
   font-size: 18px;
   line-height: calc(18 / 14);
   letter-spacing: 0.06em;
+}
+.portfolio-title:hover,
+.portfolio-title:focus {
+  color: var(--third-color);
+  background: var(--accent-color);
 }
 
 .portfolio-after-title {
